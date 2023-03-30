@@ -9,11 +9,11 @@ function App() {
       <div className="header">
         <Header></Header>
       </div>
-      <div className="container bg-info m-auto main row ">
-        <div className=" home-container col-md-8">
+      <div className="container m-auto main row ">
+        <div className="home-container m-0  col-md-8 ">
           <Home></Home>
         </div>
-        <div className=" sideCart-container col-md-4 card">
+        <div className=" sideCart-container m-0  col-md-4 ">
           <SideCart></SideCart>
         </div>
       </div>

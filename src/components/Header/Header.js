@@ -7,7 +7,7 @@ const Header = () => {
     <div>
       <nav class="container navbar bg-body-tertiary mb-3 border-bottom-1px border-bottom-danger">
         <div className="container">
-          <h1 className="navbar-brand fs-3">Knowledge with TH</h1>
+          <h1 className="navbar-brand fs-3 fw-bold ">Knowledge with TH</h1>
           <img src={logo} alt="" />
         </div>
           </nav>
