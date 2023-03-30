@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "authorName": "Tanvir Hasan",
+    "read_time": 15,
+    "blog_title": "Artificial Intelligence in Strategic Business Management",
+    "author_image": "https://ibb.co/bLP6G1h",
+    "cover_image": "https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
+    "publish_date": "Jan 14 (4 Days ago)"
+  },
+  {
+    "id": 2,
+    "authorName": "Mrs. Setara",
+    "read_time": 12,
+    "blog_title": "The Mythical Man-Month: Essays on Software Engineering",
+    "author_image": "https://ibb.co/sq7n8DD",
+    "cover_image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTQwfHx0ZWNobm9sb2d5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "publish_date": "Feb 24 (4 Days ago)"
+  },
+  {
+    "id": 3,
+    "authorName": "Mina Mostofa",
+    "read_time": 10,
+    "blog_title": "Effective Programming: More Than Writing Code",
+    "author_image": "https://ibb.co/QKtgq9m",
+    "cover_image": "https://images.unsplash.com/photo-1526649661456-89c7ed4d00b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTV8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+    "publish_date": "Mar 14 (4 Days ago)"
+  },
+  {
+    "id": 4,
+    "authorName": "Mr. Raju",
+    "read_time": 11,
+    "blog_title": "Artificial Intelligence in Enterprise Processes",
+    "author_image": "https://ibb.co/TYvt3GL",
+    "cover_image": "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXJ0aWZpY2lhbCUyMGludGVsbGlnZW5jZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+    "publish_date": "Apr 10 (4 Days ago)"
+  }
+]

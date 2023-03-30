@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header/Header";
+import SideCart from "./components/SideCart/SideCart";
+import Home from "./components/Home/Home";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="header">
+        <Header></Header>
+      </div>
+      <div className="container bg-info m-auto main row ">
+        <div className=" home-container col-md-8">
+          <Home></Home>
+        </div>
+        <div className=" sideCart-container col-md-4 card">
+          <SideCart></SideCart>
+        </div>
+      </div>
     </div>
   );
+
 }
 
 export default App;
