@@ -1,17 +1,17 @@
 import React from "react";
-import logo from '../../logo.svg'
+import logo from "../../logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Header = () => {
   return (
-    <div>
-      <nav class="container navbar bg-body-tertiary mb-3 border-bottom-1px border-bottom-danger">
+    <div className="container navbar-light bg-light p-0">
+      <nav class=" navbar mb-3 border-bottom-1px border-bottom-danger">
         <div className="container">
-          <h1 className="navbar-brand fs-3 fw-bold ">Knowledge with TH</h1>
+          <h1 className="navbar-brand fs-2 fw-bold">Knowledge with TH</h1>
           <img src={logo} alt="" />
         </div>
-          </nav>
-          <hr className="container" />
+      </nav>
+      <hr className="container" />
     </div>
   );
 };
