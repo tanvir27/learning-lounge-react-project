@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./SingleBlogs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
@@ -31,7 +30,10 @@ const SingleBlogs = ({ blog, handleReadTime, handleCountBookmark }) => {
 
         <div>
           <span className="">Read Time: {blog.read_time} min read </span>
-          <span onClick={()=> handleCountBookmark(blog)} className="bookmark-style">
+          <span
+            onClick={() => handleCountBookmark(blog,blog.id)}
+            className="bookmark-style"
+          >
             <FontAwesomeIcon icon={faBookmark} />
           </span>
         </div>

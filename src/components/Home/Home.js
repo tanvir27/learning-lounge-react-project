@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import SingleBlogs from "../SingleBlogs/SingleBlogs";
 import SideCart from "../SideCart/SideCart";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Home = () => {
   const [blogs, setBlogs] = useState([]);
@@ -13,19 +15,26 @@ const Home = () => {
       .then((data) => setBlogs(data));
   }, []);
 
-  const handleCountBookmark = (blogInfo) => {
-    console.log("counted", blogInfo);
-    const newBookmark = [...bookmark, blogInfo];
-    setBookmark(newBookmark);
+  const handleCountBookmark = (blogInfo,id) => {
+    // console.log("counted", blogInfo,id);
+    if (bookmark.includes[id]) {
+       const newBookmark = [...bookmark, blogInfo];
+       setBookmark(newBookmark);
+       toast("Wow so easy!");
+    }
+    else {
+      const newBookmark = [...bookmark, blogInfo];
+      setBookmark(newBookmark);
+      toast("Wow so easy!");
+    }
   };
 
   const handleReadTime = (readTime) => {
-    console.log(readTime);
+    // console.log(readTime);
     if (readTime) {
-      const newTime = readTime+countMinute; ; 
+      const newTime = readTime + countMinute;
       setCountMinute(newTime);
-    }
-    else {
+    } else {
       setCountMinute(countMinute);
     }
   };
@@ -46,7 +55,7 @@ const Home = () => {
       <div className=" m-0 col-md-4">
         <div className="sideCart_header mb-3">
           <p className="fs-5 fw-bold text-primary text-center my-auto py-3">
-            Spent time on Read: {0} min
+            Spent time on Read: {countMinute} min
           </p>
         </div>
         <div className="sideCart-content p-3 mb-3">

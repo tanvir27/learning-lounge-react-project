@@ -5,7 +5,7 @@ import "./SideCart.css";
 const SideCart = ({title}) => {
 
   return (
-    <div className="card mb-2  shadow p-3 bg-white rounded">
+    <div className="card mb-2 shadow p-3 bg-white rounded">
       <h6>{title.blog_title}</h6>
     </div>
   );
