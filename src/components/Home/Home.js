@@ -15,10 +15,12 @@ const Home = () => {
       .then((data) => setBlogs(data));
   }, []);
 
+  // handle bookmarks button
   const handleCountBookmark = (blogInfo, id) => {
+     console.log(bookmark);
        const newBookmark = [...bookmark, blogInfo];
        setBookmark(newBookmark);
-    console.log(blogInfo.id,id);
+    console.log(bookmark);
   
     // console.log(newBookmark);
     if (newBookmark.id === id) {
