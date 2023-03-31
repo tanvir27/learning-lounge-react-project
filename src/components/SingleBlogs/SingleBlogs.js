@@ -4,7 +4,7 @@ import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
 const SingleBlogs = ({ blog, handleReadTime, handleCountBookmark }) => {
   return (
-    <div className="blog-card card mb-2 p-4 shadow p-3 mb-5 bg-white rounded">
+    <div className="blog-card card mb-2 shadow p-4 mb-5 bg-white rounded">
       <div className="blog-poster mb-3">
         <img
           className="img-fluid w-100 rounded"

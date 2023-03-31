@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 
 import Home from "./components/Home/Home";
 import { ToastContainer } from "react-toastify";
+import BlogPage from "./components/BlogPage/BlogPage";
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
       </div>
       <div>
         <Home></Home>
+      </div>
+      <div>
+        <BlogPage></BlogPage>
       </div>
       <ToastContainer></ToastContainer>
     </div>

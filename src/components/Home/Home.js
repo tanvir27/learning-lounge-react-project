@@ -15,17 +15,20 @@ const Home = () => {
       .then((data) => setBlogs(data));
   }, []);
 
-  const handleCountBookmark = (blogInfo,id) => {
-    // console.log("counted", blogInfo,id);
-    if (bookmark.includes[id]) {
+  const handleCountBookmark = (blogInfo, id) => {
        const newBookmark = [...bookmark, blogInfo];
        setBookmark(newBookmark);
-       toast("Wow so easy!");
-    }
-    else {
+    console.log(blogInfo.id,id);
+  
+    // console.log(newBookmark);
+    if (newBookmark.id === id) {
+      console.log("its already bookmarked");
+      toast("You Have Already Bookmarked This Blog");
       const newBookmark = [...bookmark, blogInfo];
       setBookmark(newBookmark);
-      toast("Wow so easy!");
+    } else {
+      const newBookmark = [...bookmark, blogInfo];
+      setBookmark(newBookmark);
     }
   };
 
