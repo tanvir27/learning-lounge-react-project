@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SingleBlogs.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 
-const SingleBlogs = ({ blog, handleReadTime }) => {
+const SingleBlogs = ({ blog, handleReadTime, handleCountBookmark }) => {
   return (
     <div className="blog-card card mb-2 p-4 shadow p-3 mb-5 bg-white rounded">
       <div className="blog-poster mb-3">
@@ -25,13 +25,13 @@ const SingleBlogs = ({ blog, handleReadTime }) => {
           </div>
           <div>
             <h5 className="fw-bold text-black">{blog.authorName}</h5>
-            <p className="fw-bold">{blog.publish_date}</p>
+            <p className="fw-semibold">{blog.publish_date}</p>
           </div>
         </div>
 
         <div>
           <span className="">Read Time: {blog.read_time} min read </span>
-          <span className="">
+          <span onClick={()=> handleCountBookmark(blog)} className="bookmark-style">
             <FontAwesomeIcon icon={faBookmark} />
           </span>
         </div>

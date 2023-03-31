@@ -2,17 +2,11 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./SideCart.css";
 
-const SideCart = () => {
+const SideCart = ({title}) => {
+
   return (
-    <div className="">
-      <div className="sideCart_header mb-3">
-        <p className="fs-5 fw-bold text-primary text-center my-auto py-3">
-          Spent time on Read: {0} min
-        </p>
-      </div>
-      <div className="sideCart-content p-3">
-        <h5 className=" fw-bold">Bookmarked Blogs : {0}</h5>
-      </div>
+    <div className="card mb-2  shadow p-3 bg-white rounded">
+      <h6>{title.blog_title}</h6>
     </div>
   );
 };

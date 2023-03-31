@@ -1,6 +1,9 @@
 .btn-style:hover {
   cursor: pointer;
 }
+.bookmark-style{
+     cursor: pointer;
+}
 .author-info img {
   width: 60px;
   height: 60px;
