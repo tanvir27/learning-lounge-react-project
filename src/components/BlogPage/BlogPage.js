@@ -2,7 +2,7 @@ import React from "react";
 
 const BlogPage = () => {
   return (
-    <div className="container mb-2 shadow p-4 mb-5 bg-white rounded">
+    <div className="container mb-3 shadow p-4  bg-white rounded">
       <h1 className="text-center text-primary mb-3">Question and answer </h1>
       <div className=" row row-cols-1 row-cols-md-2 g-4">
         <div className="col">
