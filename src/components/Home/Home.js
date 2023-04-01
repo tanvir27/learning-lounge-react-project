@@ -17,14 +17,20 @@ const Home = () => {
 
   // handle bookmarks button
   const handleCountBookmark = (blogInfo, id) => {
+    // console.log('btn click');
+    let count;
     if (bookmark.length > 0) {
       bookmark.forEach((item) => {
         if (item.id === id) {
-          toast("You Have Already Bookmarked This Blog");
+          count = true;
         }
-        const newBookmark = [...bookmark, blogInfo];
-        setBookmark(newBookmark);
       });
+
+      if (count) {
+        toast("You Have Already Bookmarked This Blog");
+      }
+      const newBookmark = [...bookmark, blogInfo];
+      setBookmark(newBookmark);
     } else {
       const newBookmark = [...bookmark, blogInfo];
       setBookmark(newBookmark);
