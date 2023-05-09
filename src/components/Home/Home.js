@@ -60,7 +60,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className=" m-0 col-md-4">
+      <div className="sticky-top m-0 col-md-4">
         <div className="sideCart_header mb-3">
           <p className="fs-5 fw-bold text-primary text-center my-auto py-3">
             Spent time on Read: {countMinute} min

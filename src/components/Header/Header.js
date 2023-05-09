@@ -7,7 +7,13 @@ const Header = () => {
     <div className="container navbar-light bg-light p-0">
       <nav class=" navbar mb-3 border-bottom-1px border-bottom-danger">
         <div className="container">
-          <h1 className="navbar-brand fs-2 fw-bold">Knowledge with TH</h1>
+          <p className="navbar-brand fs-2 fw-bold">
+            <i>
+              {" "}
+              <span className="text-primary">Learning</span>{" "}
+              <span className="text-warning">Lounge</span>
+            </i>
+          </p>
           <img src={logo} alt="" />
         </div>
       </nav>

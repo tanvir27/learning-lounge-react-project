@@ -15,9 +15,9 @@ function App() {
       <div>
         <Home></Home>
       </div>
-      <div>
+      {/* <div>
         <BlogPage></BlogPage>
-      </div>
+      </div> */}
       <ToastContainer></ToastContainer>
     </div>
   );
